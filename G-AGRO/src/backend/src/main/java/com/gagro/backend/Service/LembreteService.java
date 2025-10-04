@@ -60,6 +60,8 @@ public class LembreteService {
         return "Lembrete não encontrado!";
     }
 
+    //Adicionar paginação para grande volumes de dados
+
     // Listar todos os lembretes
     public Iterable<Lembrete> getAllLembretes() {
         return lembreteRepository.findAll();

@@ -54,6 +54,8 @@ public class EventoService {
         if (eventoRepository.existsById(id)) {
             eventoRepository.deleteById(id);
         } else {
+            //Criar classes de exceções personalizadas para tornar
+            //a manutenção mais ágil
             throw new RuntimeException("Evento com ID " + id + " não encontrado.");
         }
     }

@@ -35,6 +35,11 @@ public class UsuarioService {
         return EMAIL_PATTERN.matcher(email).matches();
     }
 
+    //Sugestão: substituir o retorno String para lançamento de exceção
+    // incluir tratamento futuro
+
+    //Falha de segurança! Método recebe um objeto usuario como parâmetro
+    // e salva os dados no banco sem criptografar nenhuma informação sensível do mesmo
     public String signUpUser(Usuario usuario) {
         if(!isEmailValid(usuario.getEmail())){
             return "Email inválido";

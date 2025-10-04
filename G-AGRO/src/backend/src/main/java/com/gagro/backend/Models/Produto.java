@@ -2,6 +2,9 @@ package com.gagro.backend.Models;
 
 import jakarta.persistence.*;
 
+//Melhoria: Adicionar campo de imagem para representar o produto,
+// salvar url da imagem no banco utilizando um serviço cloud como AWS S3
+
 @Entity
 @Table(name = "produto")
 public class Produto {

@@ -24,6 +24,8 @@ import java.util.List;
 @RequestMapping("/lembretes")
 public class LembreteController {
 
+    //Remover lógica de verificação e alteração de objetos da camada Controller e transferir para Service
+
     @Autowired
     private LembreteService lembreteService;
     @Autowired

@@ -1,5 +1,7 @@
 package com.gagro.backend.DTO;
 
+//Utilizar records do java para implementar DTOs, diminuem a verbosidade do código
+// implementando Getters, Setters e construtor como padrão do objeto
 public class ColheitaDTO {
 
     private Long idCultura;
@@ -22,6 +24,9 @@ public class ColheitaDTO {
         this.feedBack = feedBack;
     }
 
+
+    //Nenhuma DTO do projeto utiliza métodos Set da classe, remover para diminuir verbosidade
+    // e gasto desnecessário de memória na aplicação
     public Long getIdCultura() {
         return idCultura;
     }

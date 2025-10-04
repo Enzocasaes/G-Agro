@@ -1,5 +1,6 @@
 package com.gagro.backend.DTO;
 
+// Adicionar camada de Request e Reponse dentro de DTO para diferenciar função das classes
 public class AcaoCorretivaDTO {
 
     private String descricao;

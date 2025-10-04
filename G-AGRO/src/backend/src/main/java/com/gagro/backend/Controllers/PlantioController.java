@@ -29,6 +29,7 @@ public class PlantioController {
     @Autowired
     private TerrenoRepository terrenoRepository;
 
+    // Considerar paginação para grandes volumes de dados
     @GetMapping
     public List<Plantio> getAllPlantios() {
         return plantioService.getAllPlantios();
@@ -61,6 +62,7 @@ public class PlantioController {
         return ResponseEntity.ok(response);
     }
 
+    // Transferir lógica de atualização para camada de Serviço
     @PutMapping("/{id}")
     public ResponseEntity<String> updatePlantio(@PathVariable Long id, @RequestBody PlantioDTO plantioDTO) {
         LocalDate dataPlantioLocalDate;

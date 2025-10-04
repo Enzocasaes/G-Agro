@@ -16,6 +16,8 @@ import java.util.Optional;
 @CrossOrigin("*")
 @RestController
 @RequestMapping("/acaoCorretiva")
+//Má prática: dois tipos de service chamados em um controller
+//SUGESTÃO: Adicionar camada Facade à arquitetura para centralizar os services necessários e abstrair a lógica na camada controller
 public class AcaoCorretivaController {
 
     @Autowired

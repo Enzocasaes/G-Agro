@@ -14,6 +14,8 @@ import java.util.Optional;
 @RequestMapping("/terrenos")
 public class TerrenoController {
 
+    //adicionar blocos try-catch para tratar exceções
+
     @Autowired
     private TerrenoService terrenoService;
 
