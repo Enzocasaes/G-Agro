@@ -11,9 +11,11 @@ import java.util.Optional;
 @Service
 public class ProdutoService {
 
+    //Sugestão: Injetar dependência via controller para para tornar a classe imutável e facilitar testes
     @Autowired
     private ProdutoRepository produtoRepository;
 
+    
     public List<Produto> getAllProdutos() {
         return produtoRepository.findAll();
     }

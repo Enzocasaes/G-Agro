@@ -30,6 +30,10 @@
 		<java.version>17</java.version>
 		<start-class>com.gagro.backend.BackendApplication</start-class>
 	</properties>
+
+	<!-- Sugestão: Adicionar Swagger para documentar a API -->
+
+	<!-- Sugestão: Adicionar Flyway para versionamento do Banco de Dados -->
 	<dependencies>
 		<!-- Dependência para Spring Data JPA -->
 		<dependency>
