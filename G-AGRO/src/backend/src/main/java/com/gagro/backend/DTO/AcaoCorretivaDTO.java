@@ -1,7 +1,9 @@
 package com.gagro.backend.DTO;
 
+// Adicionar camada de Request e Reponse dentro de DTO para diferenciar função das classes
 public class AcaoCorretivaDTO {
 
+    //Considere utilizar Annotations do Lombok para reduzir boilerplate
     private String descricao;
     private Long idColheita;
 

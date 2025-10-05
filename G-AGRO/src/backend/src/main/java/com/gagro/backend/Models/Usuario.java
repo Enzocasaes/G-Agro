@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 // import java.util.regex.Matcher;
 // import java.util.regex.Pattern;
 
+//Incluir uso de token JWT para autenticação e diferenciação de permissões do usuário
+
 @Entity
 @Table(name = "usuario")
 public class Usuario {

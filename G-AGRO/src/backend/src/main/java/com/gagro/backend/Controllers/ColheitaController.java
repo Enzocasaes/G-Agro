@@ -26,6 +26,8 @@ public class ColheitaController {
 
     @Autowired
     private ColheitaService colheitaService;
+
+    //Remover service inutilizado no controller
     @Autowired
     private CulturaService culturaService;
     @Autowired

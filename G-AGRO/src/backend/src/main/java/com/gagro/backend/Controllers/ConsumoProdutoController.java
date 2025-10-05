@@ -77,6 +77,8 @@ public class ConsumoProdutoController {
         return ResponseEntity.ok(response);
     }
 
+
+    //Evitar operações lógicas na Controller
     @PutMapping("/{id}")
     public ResponseEntity<String> updateConsumoProduto(@PathVariable Long id, @RequestBody ConsumoProdutoDTO consumoProdutoDTO) {
         ConsumoProduto consumoProduto = new ConsumoProduto();

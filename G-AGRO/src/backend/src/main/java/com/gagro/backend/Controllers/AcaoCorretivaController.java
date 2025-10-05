@@ -13,9 +13,14 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+
+//Prefira criar uma camada de config e configurar adequadamento o cors da aplicação
+//do que abrir para qualquer origem
 @CrossOrigin("*")
 @RestController
 @RequestMapping("/acaoCorretiva")
+//Má prática: dois tipos de service chamados em um controller
+//SUGESTÃO: Adicionar camada Facade à arquitetura para centralizar os services necessários e abstrair a lógica na camada controller
 public class AcaoCorretivaController {
 
     @Autowired

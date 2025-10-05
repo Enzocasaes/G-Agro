@@ -13,6 +13,9 @@ public class Terreno {
     private String nome;
     private String status;
     private double tamanho;
+    //Sugestão: Substituir tipo_solo de String para um ENUM
+    //definindo especificamente tipos de solo, tornando a aplicação
+    //mais robusta e segura
     private String tipo_solo;
     private String imagem;
 
@@ -41,6 +44,8 @@ public class Terreno {
     public String getNome() {
         return nome;
     }
+
+    //Analisar a necessidade de métodos Getters e Setters não utilizados
 
     public void setNome(String nome) {
         this.nome = nome;

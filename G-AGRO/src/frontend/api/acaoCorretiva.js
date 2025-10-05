@@ -123,6 +123,8 @@ export async function atualizarColheita(idAcao, dadosAcao) {
 
         if (response.ok) {
             sessionStorage.setItem('modalMessage', 'Ação Corretiva atualizada com sucesso!');
+            //Prefira atualizar o estado local  ao recarregar toda página
+            //evita perder o contexto da página e quebrar a experiência
             window.location.reload();
             return data;
         } else {

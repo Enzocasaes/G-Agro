@@ -6,5 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+    //criar query SQL específica para otimizar a consulta e diminuir a dependência no framework
+    //Sugestão: SELECT campos desejados FROM tabela
     Usuario findByEmail(String email);
 }
